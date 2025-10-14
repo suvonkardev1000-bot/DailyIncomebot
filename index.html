@@ -531,7 +531,7 @@
                 </div>
                 <div class="progress-text">
                     <span>0 টাকা</span>
-                    <span>20 টাকা</span>
+                    <span>50 টাকা</span>
                 </div>
             </div>
             
@@ -541,7 +541,7 @@
             
             <div class="action-buttons">
                 <button class="btn btn-primary" id="watch-ad-btn" onclick="watchAd()">
-                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (২ টাকা)
+                    <i class="fas fa-play"></i> বিজ্ঞাপন দেখুন (১ টাকা)
                 </button>
                 <button class="btn btn-success" id="auto-ad-btn" onclick="startAutoAds()">
                     <i class="fas fa-robot"></i> স্বয়ংক্রিয় বিজ্ঞাপন
@@ -584,8 +584,8 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ২ টাকা</p>
-                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ২০ টাকা</p>
+                <p><i class="fas fa-ad"></i> প্রতি বিজ্ঞাপন = ১ টাকা</p>
+                <p><i class="fas fa-money-bill-wave"></i> ন্যূনতম উত্তোলন: ৫০ টাকা</p>
                 <p><i class="fas fa-gift"></i> রেফারেল বোনাস: ৫ টাকা প্রতি ব্যবহারকারী</p>
             </div>
         </div>
@@ -637,7 +637,7 @@
             <div class="withdraw-section" id="withdraw-section">
                 <div class="form-group">
                     <label for="withdraw-amount">পরিমাণ (টাকা)</label>
-                    <input type="number" id="withdraw-amount" class="form-control" placeholder="টাকার পরিমাণ লিখুন" min="20">
+                    <input type="number" id="withdraw-amount" class="form-control" placeholder="টাকার পরিমাণ লিখুন" min="50">
                 </div>
                 <div class="form-group">
                     <label for="payment-method">পেমেন্ট মাধ্যম</label>
@@ -928,7 +928,7 @@
                     createCoinAnimation();
                     
                     // Show success notification
-                    showNotification(`২ টাকা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(2)} টাকা`, 'success');
+                    showNotification(`১ টাকা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(১)} টাকা`, 'success');
                     
                     // Check if earned enough for withdrawal
                     if (earnedPoints + referralEarnings >= MIN_WITHDRAW_TAKA) {
@@ -1156,5 +1156,6 @@
     </script>
 </body>
 </html>
+
 
 
